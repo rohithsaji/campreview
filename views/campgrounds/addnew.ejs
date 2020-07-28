@@ -1,0 +1,21 @@
+<%-include("../partials/header.ejs")%>
+<div class="container" style="margin-top: 20px;">
+    <h3 style="text-align: center;">Add new Camping Site</h3>
+    <form action="/campgrounds" method="POST" style="width: 30%; margin:0 auto;">
+        <div class="form-group">
+            <p>Name:</p>
+            <input class="form-control" type="text" name="campname" placeholder="Enter camp Name">
+        </div>
+        <div class="form-group">
+            <p>URL:</p>
+            <input class="form-control" type="text" name="imgurl" placeholder="Enter img url">
+        </div>
+        <div class="form-group">
+            <p>Description:</p>
+            <input class="form-control" type="text" name="imgdis" placeholder="Enter Description">
+        </div>
+        <button class="btn btn-lg btn-block btn-primary">Submit!</button>
+        <a href="/campgrounds">Go Back!</a>
+    </form>
+</div>
+<%-include("../partials/footer.ejs")%>
